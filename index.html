@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Globo Play</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #eb4640;
+            color: #333;
+        }
+
+        header {
+            background-color: #e22b34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .banner {
+            height: 400px;
+
+            background: linear-gradient(
+                rgba(70, 43, 226, 0.7),
+                rgba(236, 107, 146, 0.7)
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .banner h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            background-color: white;
+            color: #e7b9e7;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .produtos {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .produtos h2 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #afecf7;
+            font-size: 24px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .promocao {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 18px;
+        }
+
+        .preco {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .comprar {
+            display: inline-block;
+
+            background-color: #d41919;
+            color: white;
+
+            padding: 10px 20px;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .comprar:hover {
+            background-color: #4b2fe9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🎬 Globo Play</h1>
+
+        <nav>
+
+            <a href="#">Início</a>
+
+            <a href="#produtos">Categorias</a>
+
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="banner">
+
+        <div>
+
+            <h2>O início de novas oportunidades!</h2>
+
+            <p>
+                Descubra filmes, séries e novelas incríveis.
+            </p>
+
+            <a href="#produtos" class="botao">
+                Ver seções
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="produtos" id="produtos">
+
+        <h2>
+            Histórias viram possibilidades de novas imaginações
+        </h2>
+
+
+        <div class="cards">
+
+
+            <!-- PLANO -->
+
+            <div class="card">
+
+                <h3>📺 Planos</h3>
+
+                <p class="promocao">
+                    R$ 49,90
+                </p>
+
+                <div class="preco">
+                    R$ 35,90
+                </div>
+
+                <a href="#" class="comprar">
+                    Assinar
+                </a>
+
+            </div>
+
+
+            <!-- CATEGORIAS -->
+
+            <div class="card">
+
+                <h3>🎭 Categorias</h3>
+
+                <p>
+                    Histórias incríveis para todos os estilos
+                    e gostos.
+                </p>
+
+                <div class="preco">
+                    Filmes • Séries • Novelas
+                </div>
+
+                <a href="#" class="comprar">
+                    Explorar
+                </a>
+
+            </div>
+
+
+            <!-- KIT -->
+
+            <div class="card">
+
+                <h3>🍿 Kit Histórias</h3>
+
+                <p>
+                    Novelas, filmes e séries para sua diversão.
+                </p>
+
+                <div class="preco">
+                    R$ 49,90
+                </div>
+
+                <a href="#" class="comprar">
+                    Comprar
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer id="contato">
+
+        <p>
+            © 2026 Globo Play - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Entre em contato:
+            contato@globoplay.com
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
