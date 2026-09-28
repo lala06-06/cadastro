@@ -9,6 +9,23 @@
 
     <style>
 
+
+.botao-cadastrar {
+    background-color: white;
+    color: #e22b34;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.botao-cadastrar:hover {
+    background-color: #4b2fe9;
+    color: white;
+    transform: scale(1.05);
+}
         * {
             margin: 0;
             padding: 0;
@@ -159,21 +176,38 @@
 
 </head>
 
+<script>
+    document.getElementById("formCadastro")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            document.getElementById("mensagemCadastro")
+                .textContent = "Cadastro preenchido com sucesso!";
+
+            document.getElementById("mensagemCadastro")
+                .style.color = "green";
+
+        });
+</script>
+
 <body>
 
     <header>
 
         <h1>🎬 Globo Play</h1>
 
-        <nav>
+      <nav>
+    <a href="#">Início</a>
 
-            <a href="#">Início</a>
+    <a href="#produtos">Categorias</a>
 
-            <a href="#produtos">Categorias</a>
+    <a href="#contato">Contato</a>
 
-            <a href="#contato">Contato</a>
-
-        </nav>
+    <a href="#cadastro" class="botao-cadastrar">
+        Cadastrar
+    </a>
+</nav>
 
     </header>
 
@@ -274,6 +308,50 @@
         </div>
 
     </section>
+
+    <section class="produtos" id="cadastro">
+
+    <h2>Cadastre-se no Globo Play</h2>
+
+    <div class="card" style="margin: auto;">
+
+        <form id="formCadastro">
+
+            <input
+                type="text"
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <br><br>
+
+            <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <br><br>
+
+            <input
+                type="password"
+                placeholder="Crie uma senha"
+                required
+            >
+
+            <br><br>
+
+            <button type="submit" class="comprar">
+                Cadastrar
+            </button>
+
+            <p id="mensagemCadastro"></p>
+
+        </form>
+
+    </div>
+
+</section>
 
 
     <footer id="contato">
